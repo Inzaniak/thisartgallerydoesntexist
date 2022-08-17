@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <style>
+      #wall {
+        position: fixed;
+        width: 100vw;
+        height: 80vh;
+        background: #a69374;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 7px 3px -5px black;
+      }
+
+      .spotlight {
+        border-radius: 50%;
+        width: 80%;
+        height: 100%;
+        left: 10%;
+        top: 0;
+        position: absolute;
+        z-index: 8;
+        box-shadow: -15px -70px 250px 150px rgba(223, 203, 172, 0.9);
+      }
+
+      .painting {
+        width: 250px;
+
+        position: relative;
+        top: -5%;
+      }
+
+      .painting img {
+        width: 100%;
+        vertical-align: middle;
+        position: relative;
+        z-index: 9;
+        border: 10px ridge #5e3e2c;
+        box-shadow: 5px 5px 10px -2px black;
+      }
+      body {
+        margin: 0;
+      }
+
+      #floor {
+        background-image: url("http://www.videosbypat.com/img/hard-wood-floor4.jpg");
+        background-size: 20%;
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <div id="wall">
+    <div class="painting">
+      <img
+        src="https://media.discordapp.net/attachments/1005512133070557194/1009073000282325032/the_infinite_maze_by_beksinski_beuckelaer_ghibli_glowing_lights_highly_detailed_bomberg_carus_moebius_delvaus_ellis_peter_elson_giger_j_-H_704_-n_4_-g_-S_3281710296_ts-1660652150_idx-0.png?width=976&height=1342"
+        alt=""
+      />
+      <div class="spotlight"></div>
+    </div>
+  </div>
+  <div id="floor"></div>
+</html>
